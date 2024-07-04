@@ -3,31 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Igor Azevedo - Portfólio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfólio Igor Azevedo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Igor Azevedo</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="about.html">Sobre Mim</a></li>
-                <li><a href="services.html">Serviços</a></li>
-                <li><a href="projects.html">Projetos</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Bem-vindo ao meu portfólio</h2>
-            <p>Eu sou Igor Azevedo, desenvolvedor web e designer gráfico...</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Igor Azevedo. Todos os direitos reservados.</p>
-    </footer>
-    <script src="js/scripts.js"></script>
+    <nav>
+        <div class="logo">IGOR</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Igor Azevedo</h1>
+            <p>Desenvolvedor Web & Designer Gráfico</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Sou Igor Azevedo, desenvolvedor web e designer gráfico. Ofereço serviços de desenvolvimento e otimização de código para websites, bem como a criação de logotipos personalizados. Com uma abordagem focada na qualidade e na inovação, ajudo empresas a melhorar suas plataformas digitais e a construir uma identidade visual marcante.</p>
+        <p>Tenho ampla experiência em desenvolvimento web, trabalhando com HTML, CSS, JavaScript, PHP, Python, Java e SQL. Além disso, sou especializado em design gráfico, com foco na criação de logotipos e identidade visual para empresas e marcas. Minha experiência abrange a correção de bugs, otimização de performance e implementação de novas funcionalidades em websites.</p>
+    </section>
+
+    <section id="services">
+        <h2>Serviços</h2>
+        <div class="services-container">
+            <div>
+                <h3>Desenvolvimento Web</h3>
+                <p>Criação e otimização de websites responsivos e dinâmicos utilizando as melhores práticas de desenvolvimento.</p>
+            </div>
+            <div>
+                <h3>Design Gráfico</h3>
+                <p>Desenvolvimento de logotipos e identidade visual que destacam a marca no mercado.</p>
+            </div>
+            <div>
+                <h3>SEO e Performance</h3>
+                <p>Otimização de sites para melhorar o ranking nos motores de busca e aumentar a velocidade de carregamento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="portfolio-container">
+            <div>
+                <h3>Projeto 1</h3>
+                <p>Descrição do projeto 1.</p>
+            </div>
+            <div>
+                <h3>Projeto 2</h3>
+                <p>Descrição do projeto 2.</p>
+            </div>
+            <div>
+                <h3>Projeto 3</h3>
+                <p>Descrição do projeto 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
